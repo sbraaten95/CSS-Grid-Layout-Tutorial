@@ -7,13 +7,20 @@
 
   /* grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr; */
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+
+  /* repeat() function */
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+
+  /* grid-template */
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
 #element-one {
   border: 3px dotted black;
   background-color: blue;
+  /* grid-column: 1 / 4;
+  grid-row: 1; */
 }
 
 #element-two {
